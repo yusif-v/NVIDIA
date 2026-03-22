@@ -6,7 +6,7 @@ aliases: [nvidia-smi, NVIDIA System Management Interface, nvsmi]
 # nvidia-smi
 
 > **Exam Domain**: AI Operations (22%) — also relevant to AI Infrastructure (40%)
-> **Related**: [[DCGM]], [[GPU Architecture]], [[CUDA]], [[Kubernetes for AI]], [[NVIDIA GPU Operator]]
+> **Related**: [[DCGM]], [[GPU Architecture]], [[CUDA]], [[Kubernetes-for-AI]], [[NVIDIA GPU Operator]]
 
 ## Overview
 
@@ -149,7 +149,7 @@ Understanding when to use each tool is an exam-tested distinction:
 
 ## nvidia-smi in Containerised / Kubernetes Environments
 
-In containerised AI workloads managed by [[Kubernetes for AI]], `nvidia-smi` can be run inside a pod to see GPU state from the container's perspective:
+In containerised AI workloads managed by [[Kubernetes-for-AI]], `nvidia-smi` can be run inside a pod to see GPU state from the container's perspective:
 
 ```bash
 # Run nvidia-smi inside a running GPU pod
@@ -166,7 +166,7 @@ The [[NVIDIA GPU Operator]] ensures the driver and container toolkit are install
 - [[GPU Architecture]] – understanding what nvidia-smi metrics represent (SMs, VRAM, TDP)
 - [[CUDA]] – `CUDA Version` in nvidia-smi output refers to the driver's max supported version
 - [[NVIDIA GPU Operator]] – deploys the driver that makes nvidia-smi available on K8s nodes
-- [[Kubernetes for AI]] – nvidia-smi can be exec'd inside pods for container-level GPU visibility
+- [[Kubernetes-for-AI]] – nvidia-smi can be exec'd inside pods for container-level GPU visibility
 
 ---
 

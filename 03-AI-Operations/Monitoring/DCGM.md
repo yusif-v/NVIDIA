@@ -6,7 +6,7 @@ aliases: [DCGM, Data Center GPU Manager, dcgmi, DCGM Exporter, nv-hostengine]
 # DCGM
 
 > **Exam Domain**: AI Operations (22%)
-> **Related**: [[nvidia-smi]], [[NVIDIA GPU Operator]], [[Kubernetes for AI]], [[GPU Architecture]], [[NVLink and NVSwitch]], [[Multi-Instance GPU]], [[AI Security and Compliance]]
+> **Related**: [[nvidia-smi]], [[NVIDIA GPU Operator]], [[Kubernetes-for-AI]], [[GPU Architecture]], [[NVLink and NVSwitch]], [[Multi-Instance GPU]], [[AI Security and Compliance]]
 
 ## Overview
 
@@ -207,7 +207,7 @@ This enables per-tenant GPU monitoring in shared multi-tenant clusters — each 
 
 - [[nvidia-smi]] – single-node GPU inspection tool; DCGM's lightweight counterpart
 - [[NVIDIA GPU Operator]] – automatically deploys DCGM Exporter as a DaemonSet on K8s
-- [[Kubernetes for AI]] – the orchestration layer DCGM Exporter runs on
+- [[Kubernetes-for-AI]] – the orchestration layer DCGM Exporter runs on
 - [[GPU Architecture]] – the hardware internals that DCGM metrics describe (SMs, ECC, NVLink)
 - [[NVLink and NVSwitch]] – DCGM monitors per-link NVLink health and bandwidth
 - [[Multi-Instance GPU]] – DCGM can monitor individual MIG instances independently

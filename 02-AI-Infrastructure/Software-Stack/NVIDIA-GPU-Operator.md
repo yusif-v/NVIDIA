@@ -6,7 +6,7 @@ aliases: [GPU Operator, NVIDIA GPU Operator, gpu-operator]
 # NVIDIA GPU Operator
 
 > **Exam Domain**: AI Infrastructure (40%)
-> **Related**: [[Kubernetes for AI]], [[CUDA]], [[DCGM]], [[NGC Catalog]], [[AI Containers]], [[Multi-Instance GPU]], [[GPU Architecture]]
+> **Related**: [[Kubernetes-for-AI]], [[CUDA]], [[DCGM]], [[NGC Catalog]], [[AI Containers]], [[Multi-Instance GPU]], [[GPU Architecture]]
 
 ## Overview
 
@@ -170,7 +170,7 @@ NVIDIA GPU Operator            ← THIS NOTE — manages GPU software on K8s nod
 
 ## Related Notes
 
-- [[Kubernetes for AI]] – the orchestration platform the GPU Operator runs on top of
+- [[Kubernetes-for-AI]] – the orchestration platform the GPU Operator runs on top of
 - [[CUDA]] – the GPU software stack the Operator installs and manages
 - [[DCGM]] – GPU monitoring tool deployed automatically by the Operator as a DaemonSet
 - [[Multi-Instance GPU]] – MIG partitioning is configured cluster-wide by the Operator's MIG Manager
