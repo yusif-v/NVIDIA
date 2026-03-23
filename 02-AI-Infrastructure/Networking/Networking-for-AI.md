@@ -6,7 +6,7 @@ aliases: [Networking for AI, AI Networking, AI Data Center Networking, RDMA, NCC
 # Networking for AI
 
 > **Exam Domain**: AI Infrastructure (40%)
-> **Related**: [[NVLink and NVSwitch]], [[InfiniBand]], [[BlueField DPU]], [[NVIDIA DGX Systems]], [[GPU Architecture]], [[Kubernetes for AI]], [[AI Security and Compliance]], [[Training vs Inference]]
+> **Related**: [[NVLink and NVSwitch]], [[InfiniBand]], [[BlueField DPU]], [[NVIDIA DGX Systems]], [[GPU Architecture]], [[Kubernetes-for-AI]], [[AI Security and Compliance]], [[Training vs Inference]]
 
 ## Overview
 
@@ -197,7 +197,7 @@ Understanding relative bandwidth helps frame the hierarchy:
 | **400GbE Ethernet** | 50 GB/s | Storage/mgmt | Ethernet |
 | **100GbE Ethernet** | 12.5 GB/s | Storage/mgmt | Ethernet |
 
-The 18× gap between NVLink (900 GB/s) and InfiniBand NDR (50 GB/s) explains why topology-aware scheduling in [[Kubernetes for AI]] matters — keeping distributed training within a single NVLink domain is dramatically faster than crossing the InfiniBand fabric.
+The 18× gap between NVLink (900 GB/s) and InfiniBand NDR (50 GB/s) explains why topology-aware scheduling in [[Kubernetes-for-AI]] matters — keeping distributed training within a single NVLink domain is dramatically faster than crossing the InfiniBand fabric.
 
 ---
 
@@ -238,7 +238,7 @@ Separate networks for:
 - [[BlueField DPU]] – programmable SmartNIC for network offload and zero-trust security enforcement
 - [[NVIDIA DGX Systems]] – DGX nodes use NVLink internally and InfiniBand externally
 - [[GPU Architecture]] – NVLink bandwidth is a GPU architecture property (generation-specific)
-- [[Kubernetes for AI]] – topology-aware scheduling places pods within NVLink domains for maximum bandwidth
+- [[Kubernetes-for-AI]] – topology-aware scheduling places pods within NVLink domains for maximum bandwidth
 - [[Training vs Inference]] – distributed training drives the extreme networking requirements; inference is less demanding
 - [[AI Security and Compliance]] – RDMA access control, network segmentation, DPU-enforced isolation
 
