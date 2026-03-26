@@ -6,7 +6,7 @@ aliases: [DGX, NVIDIA DGX, DGX Systems, DGX A100, DGX H100, DGX H200, DGX B200, 
 # NVIDIA DGX Systems
 
 > **Exam Domain**: AI Infrastructure (40%)
-> **Related**: [[GPU Architecture]], [[NVLink and NVSwitch]], [[InfiniBand]], [[NVIDIA Base Command]], [[DCGM]], [[CUDA]], [[Multi-Instance GPU]], [[AI Containers]], [[NGC Catalog]], [[Kubernetes for AI]], [[Slurm]]
+> **Related**: [[GPU Architecture]], [[NVLink and NVSwitch]], [[InfiniBand]], [[NVIDIA Base Command]], [[DCGM]], [[CUDA]], [[Multi-Instance GPU]], [[AI Containers]], [[NGC Catalog]], [[Kubernetes-for-AI]], [[Slurm]]
 
 ## Overview
 
@@ -113,15 +113,15 @@ DGX systems are designed to scale in defined building blocks:
 │  DGX SuperPOD  (32+ DGX nodes)                      │
 │  ┌─────────────────────────────────────────────┐    │
 │  │  DGX Pod  (8–32 DGX nodes)                  │    │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  │    │
-│  │  │ DGX Node │  │ DGX Node │  │ DGX Node │  │    │
-│  │  │ 8× H100  │  │ 8× H100  │  │ 8× H100  │  │    │
-│  │  └────┬─────┘  └────┬─────┘  └────┬─────┘  │    │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐   │    │
+│  │  │ DGX Node │  │ DGX Node │  │ DGX Node │   │    │
+│  │  │ 8× H100  │  │ 8× H100  │  │ 8× H100  │   │    │
+│  │  └────┬─────┘  └────┬─────┘  └────┬─────┘   │    │
 │  │       └─────────────┴─────────────┘         │    │
-│  │            InfiniBand fabric                 │    │
+│  │            InfiniBand fabric                │    │
 │  └─────────────────────────────────────────────┘    │
-│       NVIDIA Quantum-2 InfiniBand spine switches     │
-│       NVIDIA Base Command (cluster management)       │
+│      NVIDIA Quantum-2 InfiniBand spine switches     │
+│      NVIDIA Base Command (cluster management)       │
 └─────────────────────────────────────────────────────┘
 ```
 
